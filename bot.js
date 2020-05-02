@@ -28,4 +28,16 @@ bot.on('message', (msg) => {
   if(msg.text.toString().toLowerCase().indexOf(who) === 0){
     bot.sendMessage(msg.chat.id, 'Brrrrzzzt. I am Matcha Bot. The bot version of Matcha Shiba');
   }
+
+  var bDay = 'happy birthday';
+  if(msg.text.toString().toLowerCase().includes(bDay)){
+    bot.sendMessage(msg.chat.id, '\u304A\u8A95\u751F\u65E5\u304A\u3081\u3067\u3068\u3046\u3054\u3056\u3044\u307E\u3059');
+  }
+
+  var how = 'how are you?'
+  var feelings = ['I\'m doing good', 'Meh', 'Living the dream', 'Need caffeine...', 'I didn\'t even have to use my AK... I gotta say it was a good day', 'I\'m hungry', 'I feel GREAT!', 'Feeling sleepy..', 'I\'m thirsty', 'I\'m pretty drunk..WOOOOOOOO!!!!!!', 'A little pissed off'];
+  if(msg.text.toString().toLowerCase().indexOf(how) === 0){
+    var feelingIndex = Math.floor(Math.random() * feelings.length);
+    bot.sendMessage(msg.chat.id, feelings[feelingIndex]);
+  }
 });
