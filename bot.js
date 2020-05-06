@@ -46,16 +46,23 @@ bot.on('message', (msg) => {
       color: 'green',
       foods: ['Katsu Curry', 'Sushi', 'Tempura', 'Ramen', 'Curry', 'Hot Soba', 'Cold Soba', 'Curry', 'Fruit', 'Berries'],
       drinks: ['matcha', 'green tea', 'tea', 'sencha', 'oolong'],
-      places: ['Japan', 'the beach', 'Japanese gardens', 'tea houses']
+      places: ['Japan', 'the beach', 'Japanese gardens', 'tea houses'],
+      games: {
+        gameboy: ['Mario Golf', 'Pokemon Green', 'Pokemon Crystal', 'Magical Vacation', 'Wario Ware', 'Legend of Zelda Minish Cap', 'Legend of Zelda: Links Awakening', 'Breath of Fire', 'Shining Force', 'Golden Sun']
+      }
     },
     birthday: 'February 29',
-    feelings: ['I\'m doing good', 'Meh', 'Living the dream', 'Need caffeine...', 'I didn\'t even have to use my AK... I gotta say it was a good day', 'I\'m hungry', 'I feel GREAT!', 'Feeling sleepy..', 'I\'m thirsty', 'I\'m pretty drunk..WOOOOOOOO!!!!!!', 'A little pissed off'],
+    feelings: ['I\'m doing good', 'Meh', 'Living the dream', 'Need caffeine...', 'I didn\'t even have to use my AK... I gotta say it was a good day', 'I\'m hungry', 'I feel GREAT!', 'Feeling sleepy..', 'I\'m thirsty', 'I\'m pretty drunk..WOOOOOOOO!!!!!!', 'A little pissed off', 'Genki desu'],
     location: 'Orange County, California',
     height: 'Short',
     weight: 'My secret',
     age: 'Brrrrrzzztt....error detected!',
     sex: 'Not on first date...\nOh! You don\'t mean that',
-    species: 'Inu \u1F415'
+    species: 'Inu \u1F415',
+    job: 'I make tea and cook',
+    workplace: 'at my cafe',
+    hobbies: ['tea', 'traveling everywhere', 'playing my Game Boy', 'building things', 'gardening', 'reading', 'karaoke', 'watercolor', 'exploring the outdoors', 'surfing'],
+    canBoop: false
 
 
 
