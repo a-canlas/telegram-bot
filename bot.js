@@ -35,9 +35,37 @@ bot.on('message', (msg) => {
   }
 
   var how = 'how are you?'
-  var feelings = ['I\'m doing good', 'Meh', 'Living the dream', 'Need caffeine...', 'I didn\'t even have to use my AK... I gotta say it was a good day', 'I\'m hungry', 'I feel GREAT!', 'Feeling sleepy..', 'I\'m thirsty', 'I\'m pretty drunk..WOOOOOOOO!!!!!!', 'A little pissed off'];
   if(msg.text.toString().toLowerCase().indexOf(how) === 0){
-    var feelingIndex = Math.floor(Math.random() * feelings.length);
-    bot.sendMessage(msg.chat.id, feelings[feelingIndex]);
+    var feelingIndex = Math.floor(Math.random() * matcha.feelings.length);
+    bot.sendMessage(msg.chat.id, matcha.feelings[feelingIndex]);
   }
+
+  var matcha = {
+    name: 'Matcha Shi-bot',
+    favorites: {
+      color: 'green',
+      foods: ['Katsu Curry', 'Sushi', 'Tempura', 'Ramen', 'Curry', 'Hot Soba', 'Cold Soba', 'Curry', 'Fruit', 'Berries'],
+      drinks: ['Matcha', 'Green Tea', 'Tea', 'Sencha', 'Oolong'],
+      places: ['Japan', 'the beach', 'Japanese gardens', 'tea houses'],
+      games: {
+        gameboy: ['Mario Golf', 'Pokemon Green', 'Pokemon Crystal', 'Magical Vacation', 'Wario Ware', 'Legend of Zelda Minish Cap', 'Legend of Zelda: Links Awakening', 'Breath of Fire', 'Shining Force', 'Golden Sun']
+      }
+    },
+    birthday: 'February 29',
+    feelings: ['I\'m doing good', 'Meh', 'Living the dream', 'Need caffeine...','I\'m hungry', 'I feel GREAT!', 'Feeling sleepy..', 'I\'m thirsty', 'I\'m pretty drunk..WOOOOOOOO!!!!!!', 'A little pissed off', 'Genki desu'],
+    location: 'Orange County, California',
+    height: 'Short',
+    weight: 'My secret',
+    age: 'Brrrrrzzztt....error detected!',
+    sex: 'Not on first date...\nOh! You don\'t mean that',
+    species: 'Inu \u1F415',
+    job: 'I make tea and cook',
+    workplace: 'at my cafe',
+    hobbies: ['tea', 'traveling everywhere', 'playing my Game Boy', 'building things', 'gardening', 'reading', 'karaoke', 'watercolor', 'exploring the outdoors', 'surfing'],
+    canBoop: false,
+    isNice: true,
+    meanSayings: ['Shut up', 'Go away..', '...', 'Piss off', 'Bite me', '\u3070\u3095']
+
+  }
+
 });
