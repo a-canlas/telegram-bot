@@ -40,6 +40,12 @@ bot.on('message', (msg) => {
     bot.sendMessage(msg.chat.id, matcha.feelings[feelingIndex]);
   }
 
+  if(msg.text.toString().toLowerCase().includes('favorite color')){
+    bot.sendMessage(msg.chat.id, matcha.favorites.color);
+  }
+
+
+
   var matcha = {
     name: 'Matcha Shi-bot',
     favorites: {
